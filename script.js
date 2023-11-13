@@ -50,7 +50,7 @@ function checkInput() {
     setSuccess(password);
   }
 
-  if (passwordValue !== confirmPasswordValue) {
+  if (confirmPasswordValue === "" || passwordValue !== confirmPasswordValue) {
     setError(confirmPassword, "Passwords do not match.");
   } else {
     setSuccess(confirmPassword);
